@@ -1,0 +1,11 @@
+created git
+cretaed mongodb
+
+install
+lite-server
+nodemon
+yarn
+typescript
+express-generator
+
+NoSQL and mongodb.doc
