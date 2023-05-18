@@ -1,0 +1,14 @@
+Dispatcher
+
+The dispatcher object handles each HTTP request received by the server and then decides the order of middleware execution in a cascading form.
+
+To understand Connect better, take a look at the following diagram:
+
+
+Dispatcher > Application logger > Body parser > Statics middleware > Custom middleware
+e.g.
+GET/about > next() > next() > next() > res.end()
+GET/js/common.js > next() > next() > res.end()
+
+In the next Lesson, you'll create your first Express
+application, but Express is based on Connect's approach.
