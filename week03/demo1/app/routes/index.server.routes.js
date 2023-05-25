@@ -10,12 +10,16 @@ router.get("/about", function (req, res, next) {
   res.render("index", { title: "About" });
 });
 
-router.get("/content", function (req, res, next) {
-  res.render("index", { title: "Content" });
+router.get("/contact", function (req, res, next) {
+  res.render("index", { title: "Contact" });
 });
 
 router.get("/services", function (req, res, next) {
   res.render("index", { title: "Services" });
+});
+
+router.get("/products", function (req, res, next) {
+  res.render("index", { title: "Products" });
 });
 
 module.exports = router;
