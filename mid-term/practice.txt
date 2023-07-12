@@ -1,0 +1,10 @@
+give 2 data files,
+1. node modules
+2. step by step question
+
+1. put name
+2. URI
+3. client side, create a remove button?
+4. product-details.component.html add a remove all button
+
+
