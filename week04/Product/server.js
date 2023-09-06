@@ -78,11 +78,20 @@ function initial() {
   });
 }
 
-var corsOptions = {
-  origin: "http://localhost:8081",
+/*var corsOptions = {
+  origin: "http://localhost:4200",
 };
 
-app.use(cors(corsOptions));
+app.use(cors(corsOptions));*/
+
+/* In server.js */
+// app.use(cors());
+app.use(
+  cors({
+    credentials: true,
+    origin: ["http://localhost:8081"],
+  })
+);
 
 // parse requests of content-type - application/json
 
